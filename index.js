@@ -24,3 +24,16 @@ function contact(event) {
       alert("The email service is temporarily unavailable");
     });
 }
+
+  //toggle modal
+    // console.log('toggleModal()')
+
+let isModalOpen = false;
+function toggleModal() {
+if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal--open")
+}
+      isModalOpen = true;
+  document.body.classList += " modal--open";
+}
