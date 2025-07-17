@@ -1,3 +1,20 @@
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+    document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+// Header: <img id="personal-logo" src="./assets/d.2.PNG" alt="" />
+// Footer: <img src="./assets/d (1).2.PNG" class="footer__logo--img" alt="" />
+
+//For emailjs:
 //template_vacr329
 //service_3e7crk8
 //PK dexkIPyatsyDD7suz
@@ -28,7 +45,7 @@ function contact(event) {
   //toggle modal
     // console.log('toggleModal()')
 
-let isModalOpen = false;
+
 function toggleModal() {
 if (isModalOpen) {
     isModalOpen = false;
